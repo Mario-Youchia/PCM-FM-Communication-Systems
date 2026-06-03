@@ -1,6 +1,6 @@
 # PCM and FM Communication Systems
 
-This project contains communication-system simulations and implementations developed for Communications Theory and Systems. It includes a MATLAB Pulse Code Modulation (PCM) simulator, an FM communication-system MATLAB script, a Simulink model, a Multisim transmitter-components design, and the final report.
+This project includes MATLAB Pulse Code Modulation (PCM) simulator, FM communication-system MATLAB script, Simulink model, and Multisim transmitter-components design.
 
 ## Preview
 
@@ -10,7 +10,7 @@ The PCM comparison shows how different sampling and quantization settings affect
 
 ![PCM output quality summary](public/images/projects/pcm-fm-communication-systems/pcm-output-quality-summary.png)
 
-The output quality summary orders the PCM audio outputs from lower quality to higher quality using a signal-to-error score in dB. Negative values are kept because they still have signal-processing meaning: they indicate cases where the reconstruction error is larger than the signal power under this comparison method.
+The output quality summary lists the PCM audio outputs from lowest to highest quality based on a signal-to-error score in dB. Negative values are kept, because they have signal-processing meaning: they are for cases when the reconstruction error exceeds the signal power in this mode of comparison.
 
 ![PCM quantizer comparison](public/images/projects/pcm-fm-communication-systems/pcm-quantizer-comparison-16khz.png)
 
@@ -18,15 +18,15 @@ The quantizer comparison focuses on the 16 kHz output files and compares uniform
 
 ![FM message and modulated signal](public/images/projects/pcm-fm-communication-systems/fm-message-and-modulated-signal.png)
 
-The FM MATLAB simulation shows the original message signal together with the frequency-modulated carrier signal.
+The FM MATLAB simulation shows the frequency modulated carrier signal and the original message signal.
 
 ![FM frequency domain representation](public/images/projects/pcm-fm-communication-systems/fm-frequency-domain-representation.png)
 
-The frequency-domain view compares the spectrum of the message signal with the spectrum of the generated FM signal.
+Frequency domain view compares the spectrum of the message signal with the spectrum of the generated FM signal.
 
 ![FM demodulated signal](public/images/projects/pcm-fm-communication-systems/fm-demodulated-signal.png)
 
-The demodulation simulation follows the project script flow and compares the recovered output with the original message signal.
+The demodulation simulation compares the recovered output with the original signal message.
 
 ![FM Simulink model](public/images/projects/pcm-fm-communication-systems/fm-simulink-model.png)
 
@@ -34,15 +34,15 @@ The Simulink model represents the FM communication system using block-diagram si
 
 ![FM receiver hardware implementation](public/images/projects/pcm-fm-communication-systems/fm-receiver-hardware-implementation.png)
 
-The hardware implementation section documents the FM receiver circuit assembled and tested as part of the project.
+The hardware implementation section documents the FM receiver circuit assembled and tested.
 
 ![FM transmitter components in Multisim](public/images/projects/pcm-fm-communication-systems/fm-transmitter-components-multisim.png)
 
-The Multisim design shows transmitter-side circuit components used in the FM hardware-oriented section.
+The Multisim design shows transmitter-side circuit components used in the FM hardware section.
 
 ![FM Gilbert multiplier in Multisim](public/images/projects/pcm-fm-communication-systems/fm-gilbert-multiplier-multisim.png)
 
-The Gilbert multiplier circuit appears as part of the analog communication-system hardware design and simulation work.
+The Gilbert multiplier circuit is part of the analog communication-system hardware design.
 
 ## Contents
 
@@ -50,7 +50,15 @@ The Gilbert multiplier circuit appears as part of the analog communication-syste
 * `matlab/fm-system/` — MATLAB FM communication-system script
 * `simulink/` — Simulink model
 * `multisim/` — Multisim transmitter-components design
-* `docs/` — final report
+
+## Main Features
+
+* MATLAB PCM simulator for sine-wave and audio-file input
+* Audio sampling, quantization, encoding, decoding, and reconstruction
+* Multiple reconstructed audio outputs under `matlab/pcm-simulator/Outputs/`
+* MATLAB FM signal generation and demodulation script
+* Simulink FM communication-system model
+* Multisim transmitter-components circuit design
 
 ## PCM Simulator
 
@@ -115,7 +123,7 @@ The highest-quality outputs are the `Fs16000` files with `L256` or `L512`.
 
 ## FM System
 
-The FM portion includes:
+The FM part includes:
 
 * MATLAB FM communication-system simulation
 * Simulink model
@@ -157,5 +165,4 @@ multisim/Transmitter Components.ms14
 
 ## Limitations
 
-This is a course-level communications project focused on PCM simulation, FM system modeling, and basic hardware-oriented communication-system design. It is not intended to be a complete production communication system.
-
+This is a simple communications project involving PCM simulation, FM system modeling and simple hardware-oriented communication-system design. It is not intended to be a full production communication system.
