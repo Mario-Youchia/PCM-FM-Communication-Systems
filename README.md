@@ -8,39 +8,39 @@ This project contains communication-system simulations and implementations devel
 
 The PCM comparison shows how different sampling and quantization settings affect reconstructed audio from `Test.wav`.
 
-![PCM output quality summary](images/projects/pcm-fm-communication-systems/pcm-output-quality-summary.png)
+![PCM output quality summary](public/images/projects/pcm-fm-communication-systems/pcm-output-quality-summary.png)
 
 The output quality summary orders the PCM audio outputs from lower quality to higher quality using a signal-to-error score in dB. Negative values are kept because they still have signal-processing meaning: they indicate cases where the reconstruction error is larger than the signal power under this comparison method.
 
-![PCM quantizer comparison](images/projects/pcm-fm-communication-systems/pcm-quantizer-comparison-16khz.png)
+![PCM quantizer comparison](public/images/projects/pcm-fm-communication-systems/pcm-quantizer-comparison-16khz.png)
 
 The quantizer comparison focuses on the 16 kHz output files and compares uniform quantization with μ-law companding across different quantization levels.
 
-![FM message and modulated signal](images/projects/pcm-fm-communication-systems/fm-message-and-modulated-signal.png)
+![FM message and modulated signal](public/images/projects/pcm-fm-communication-systems/fm-message-and-modulated-signal.png)
 
 The FM MATLAB simulation shows the original message signal together with the frequency-modulated carrier signal.
 
-![FM frequency domain representation](images/projects/pcm-fm-communication-systems/fm-frequency-domain-representation.png)
+![FM frequency domain representation](public/images/projects/pcm-fm-communication-systems/fm-frequency-domain-representation.png)
 
 The frequency-domain view compares the spectrum of the message signal with the spectrum of the generated FM signal.
 
-![FM demodulated signal](images/projects/pcm-fm-communication-systems/fm-demodulated-signal.png)
+![FM demodulated signal](public/images/projects/pcm-fm-communication-systems/fm-demodulated-signal.png)
 
 The demodulation simulation follows the project script flow and compares the recovered output with the original message signal.
 
-![FM Simulink model](images/projects/pcm-fm-communication-systems/fm-simulink-model.png)
+![FM Simulink model](public/images/projects/pcm-fm-communication-systems/fm-simulink-model.png)
 
 The Simulink model represents the FM communication system using block-diagram simulation.
 
-![FM receiver hardware implementation](images/projects/pcm-fm-communication-systems/fm-receiver-hardware-implementation.png)
+![FM receiver hardware implementation](public/images/projects/pcm-fm-communication-systems/fm-receiver-hardware-implementation.png)
 
 The hardware implementation section documents the FM receiver circuit assembled and tested as part of the project.
 
-![FM transmitter components in Multisim](images/projects/pcm-fm-communication-systems/fm-transmitter-components-multisim.png)
+![FM transmitter components in Multisim](public/images/projects/pcm-fm-communication-systems/fm-transmitter-components-multisim.png)
 
 The Multisim design shows transmitter-side circuit components used in the FM hardware-oriented section.
 
-![FM Gilbert multiplier in Multisim](images/projects/pcm-fm-communication-systems/fm-gilbert-multiplier-multisim.png)
+![FM Gilbert multiplier in Multisim](public/images/projects/pcm-fm-communication-systems/fm-gilbert-multiplier-multisim.png)
 
 The Gilbert multiplier circuit appears as part of the analog communication-system hardware design and simulation work.
 
