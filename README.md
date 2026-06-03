@@ -4,7 +4,7 @@ This project contains communication-system simulations and implementations devel
 
 ## Preview
 
-![PCM audio reconstruction comparison](images/projects/pcm-fm-communication-systems/pcm-audio-reconstruction-comparison.png)
+![PCM audio reconstruction comparison](public/images/projects/pcm-fm-communication-systems/pcm-audio-reconstruction-comparison.png)
 
 The PCM comparison shows how different sampling and quantization settings affect reconstructed audio from `Test.wav`.
 
